@@ -71,3 +71,9 @@ volumeMounts: []
 nodeSelector: {}
 tolerations: []
 affinity: {}
+
+# Kubernetes Secret configuration
+secret:
+  enabled: true
+  name: habit-tracker-secret
+  key: APP_ENV
