@@ -1,0 +1,20 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: habit-tracker
+  namespace: habit-tracker
+  labels:
+    release: monitoring
+    app: habit-tracker
+spec:
+  namespaceSelector:
+    matchNames:
+      - habit-tracker
+  selector:
+    matchLabels:
+      app.kubernetes.io/instance: habit-tracker
+      app.kubernetes.io/name: habit-tracker
+  endpoints:
+    - port: http
+      path: /actuator/prometheus
+      interval: 30s
