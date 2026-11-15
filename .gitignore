@@ -1,0 +1,20 @@
+# Maven build files
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+
+# SonarQube database
+*.mv.db
+*.trace.db
+
+# Logs
+*.log
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# Operating system files
+.DS_Store
+Thumbs.db
