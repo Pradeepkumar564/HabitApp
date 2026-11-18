@@ -4,7 +4,7 @@ replicaCount: 2
 image:
   repository: pradeepkumar564/habit-tracker
   pullPolicy: Always
-  tag: "monitoring-v1"
+  tag: "16"
 
 imagePullSecrets: []
 
